@@ -6,6 +6,10 @@ app = Flask(__name__)
 def about():
     return render_template('about.html')
 
+@app.route('/new')
+def new_p():
+    return 'YAY New route'
+
 @app.route('/reg')
 def reg():
     return render_template('reg.html')
